@@ -1,4 +1,4 @@
-const lfsBasePath = 'https://media.githubusercontent.com/media/PrzygodyReksia/PrzygodyReksia.github.io/refs/heads/main/pliki/reksio';
+const lfsBasePath = 'https://media.githubusercontent.com/media/PrzygodyReksia/PrzygodyReksia.github.io/refs/heads/main/pliki/reksio/';
 
 function graph_link(dopobrania, miniaturka) {
 	document.open();
