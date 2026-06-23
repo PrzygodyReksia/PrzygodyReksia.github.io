@@ -1,3 +1,5 @@
+const lfsBasePath = 'https://media.githubusercontent.com/media/PrzygodyReksia/PrzygodyReksia.github.io/refs/heads/main/pliki/reksio';
+
 function graph_link(dopobrania, miniaturka) {
 	document.open();
 	document.write("<input type='image' onclick=\"clicked_link('" + dopobrania + "');\" src='" + miniaturka + "'>");
@@ -21,7 +23,7 @@ function clicked_link(dopobrania) {
 }
 
 function file_link(dopobrania, miniaturka) {
-	document.write("<a href='" + dopobrania + "' download><img src='" + miniaturka + "' border='0'></a>");
+	document.write("<a href='" + lfsBasePath + dopobrania + "' download><img src='" + miniaturka + "' border='0'></a>");
 }
 
 function anim_link(dopobrania) {
