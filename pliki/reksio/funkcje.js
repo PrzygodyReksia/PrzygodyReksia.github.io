@@ -1,4 +1,6 @@
-const lfsBasePath = 'https://media.githubusercontent.com/media/PrzygodyReksia/PrzygodyReksia.github.io/refs/heads/main/pliki/reksio/';
+const lfsBasePath = location.hostname.endsWith('github.io')
+	? 'https://media.githubusercontent.com/media/PrzygodyReksia/PrzygodyReksia.github.io/refs/heads/main/pliki/reksio/'
+	: '';
 
 function graph_link(dopobrania, miniaturka) {
 	document.open();
@@ -24,6 +26,10 @@ function clicked_link(dopobrania) {
 
 function file_link(dopobrania, miniaturka) {
 	document.write("<a href='" + lfsBasePath + dopobrania + "' download><img src='" + miniaturka + "' border='0'></a>");
+}
+
+function file_link_text(dopobrania, tekst) {
+	document.write("<a href='" + lfsBasePath + dopobrania + "' download>" + tekst + "</a>");
 }
 
 function anim_link(dopobrania) {
